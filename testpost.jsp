@@ -31,19 +31,6 @@
 	</table>
 </body>
 <script type="text/javascript">
-
-	function myThread(callback){
-	 
-	  return window.setTimeout(function(){
-		alert('登录成功');
-		callback();
-	 
-	  },0);
-	 
-	}
-	function b(){
-		window.location.href = 'http://open.imdada.cn/appInfo/';
-	}
 	function loginPOST(){
 		if($("#name").val()==""){
 			window.alert('账号不能为空');
@@ -56,9 +43,8 @@
 			return ;
 		}
 		$("#loginForm").submit();
-		
-		myThread(b);
+		alert('登录成功');
+		window.location.href = 'http://open.imdada.cn/appInfo/';
 	}
-
 </script> 
 </html>
